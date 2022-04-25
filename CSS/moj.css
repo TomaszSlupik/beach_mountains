@@ -1,0 +1,109 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(37, 37, 37);
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+.all {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.west {
+	height: 100px;
+	background-image: url(../IMG/sunset-3726030_1920.jpg);
+}
+.beach {
+	height: 400px;
+	background-image: url(../IMG/beach-1852945_1920.jpg);
+	background-position: center;
+}
+
+.enlarge {
+	height: 400px;
+	background-position: center;
+}
+
+.small {
+	height: 100px;
+	background-position: 0 30%;
+}
+
+.mountainsowest {
+	height: 100px;
+	background-image: url(../IMG/mountainsWest.jpg);
+}
+
+.mountains {
+	height: 400px;
+	background-image: url(../IMG/mountains-1587287_1920.jpg);
+	background-position: 0 80%;
+}
+
+.big {
+	height: 400px;
+	background-position: 0 90%;
+}
+
+section {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	position: relative;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	border: none;
+	font-size: 32px;
+	color: #ffffff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px white;
+	width: 200px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: 30px;
+}
+
+button:after {
+	content: "";
+	background: #0e140e;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
+}
+button:hover {
+	transform: scale(1.1);
+}
